@@ -9,7 +9,7 @@ export default function Put() {
     const { id } = useParams()
 
     useEffect(() => {
-        axios.get(`http://localhost:2300/get/${id}`)
+        axios.get(`https://frontandback-etvq.onrender.com/get/${id}`)
             .then((res) => {
                 setname(res.data.Name)
                 setcourse(res.data.Course)
@@ -18,7 +18,7 @@ export default function Put() {
     })
 
     function handleupdate() {
-        axios.put(`http://localhost:2300/update/${id}`, { Name: name, Course: course })
+        axios.put(`https://frontandback-etvq.onrender.com/update/${id}`, { Name: name, Course: course })
             .then(() => {
                 alert('successfully updated')
                 window.location = '/'
