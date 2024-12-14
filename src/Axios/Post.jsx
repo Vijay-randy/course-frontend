@@ -27,7 +27,7 @@ export default function Post() {
             .then((res) => {
                 setview(res.data)
             })
-            .catch(console.log('err'))
+            .catch((err)=>console.log(err))
     })
 
     return (

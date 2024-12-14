@@ -15,7 +15,7 @@ export default function Put() {
                 setcourse(res.data.Course)
             })
             .catch(err => { console.log(err) })
-    })
+    },[id])
 
     function handleupdate() {
         axios.put(`https://frontandback-etvq.onrender.com/update/${id}`, { Name: name, Course: course })
