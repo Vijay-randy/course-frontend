@@ -5,9 +5,9 @@ import './index.css';
 // import App from './App.jsx';
 import reportWebVitals from './reportWebVitals';
 // import App from './App';
-// import App1 from './App1';
+import App1 from './App1';
 import { BrowserRouter } from 'react-router-dom';
-import AppForm from './form/AppForm'
+//import AppForm from './form/AppForm'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,8 +16,8 @@ root.render(
       {/* <App /> */}
       {/* <App/> */}
       {/* <App/> */}
-      {/* <App1 /> */}
-      <AppForm/>
+      <App1 /> 
+        {/* <AppForm/> */}
     </BrowserRouter>
 
   </React.StrictMode>
