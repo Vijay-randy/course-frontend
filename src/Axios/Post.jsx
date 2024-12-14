@@ -11,7 +11,7 @@ export default function Post() {
             Name: name,
             Course: course
         }
-        axios.post('http://localhost:2300/create', data)
+        axios.post('https://frontandback-etvq.onrender.com/create', data)
             .then(() => {
                 alert('success')
             }).catch(console.log('err'))
@@ -23,7 +23,7 @@ export default function Post() {
     const [view, setview] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:2300/find')
+        axios.get('https://frontandback-etvq.onrender.com/find')
             .then((res) => {
                 setview(res.data)
             })
@@ -60,7 +60,7 @@ export default function Post() {
                                     <td>
                                         <Link className="btn btn-danger" to={`/edit/${item._id}`}>update</Link>
                                         <button className="btn btn-success" onClick={() => {
-                                            axios.delete(`http://localhost:2300/delete/${item._id}`)
+                                            axios.delete(`https://frontandback-etvq.onrender.com/delete/${item._id}`)
                                                 .then(alert('success'))
                                                 .catch(console.log('err'))
                                         }}>delete</button>
