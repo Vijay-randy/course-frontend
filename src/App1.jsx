@@ -25,7 +25,7 @@ function App1() {
 {/* <Counder/> */}
 {/* <TextField/> */}
 {/* <Checkbox/> */}
-</* <Images/> */}
+{/* <Images/> */}
       {/* </ThemeProvider> */}
       {/* <h1>hello</h1> */}
 
