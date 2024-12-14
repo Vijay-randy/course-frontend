@@ -1,10 +1,10 @@
 import React from "react";
 // import Checkbox from "./Checkbox";
-import Images from "./Images";
+// import Images from "./Images";
 // import Axios from "./functional/Axios";
-// import Post from "./Axios/Post";
-// import { Route, Routes } from "react-router-dom";
-// import Put from "./Axios/Put";
+ import Post from "./Axios/Post";
+ import { Route, Routes } from "react-router-dom";
+ import Put from "./Axios/Put";
 // import Context from "./context/Context";
 // import Service from "./context/Service";
 // import UserReducer from "./functional/Router/UserReducer";
@@ -25,7 +25,7 @@ function App1() {
 {/* <Counder/> */}
 {/* <TextField/> */}
 {/* <Checkbox/> */}
-<Images/>
+</* <Images/> */}
       {/* </ThemeProvider> */}
       {/* <h1>hello</h1> */}
 
@@ -45,10 +45,10 @@ function App1() {
       {/* <Axios/> */}
       {/* <Post /> */}
 
-      {/* <Routes>
+       <Routes>
         <Route path="/" element={<Post/>}></Route>
         <Route path="/edit/:id" element={<Put/>}></Route>
-      </Routes> */}
+      </Routes>
       
     </>
   )
